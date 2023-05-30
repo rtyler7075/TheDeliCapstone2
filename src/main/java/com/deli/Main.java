@@ -1,22 +1,26 @@
 package com.deli;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
 
-        private static void addDrinks() {
+        private static void addDrinks () {
             String input;
-            do{
+            do {
                 System.out.println("---Drinks---");
                 System.out.println("\t1: Drink Size");
                 System.out.println("\t2: Drink Flavor");
 
             }
         }
-        private static void addChips() {
+        private static void addChips () {
+
+            Scanner scanner = new Scanner();
 
             String input;
-            do{
+            do {
                 System.out.println("---Chips---");
                 System.out.println("\t1: Lays Original");
                 System.out.println("\t2: Lays BBQ");
@@ -26,7 +30,7 @@ public class Main {
 
                 String input = scanner.nextLine();
 
-                switch (input.toUpperCase()){
+                switch (input.toUpperCase()) {
                     case "1":
                         System.out.println("You have selected Lays Original Chips");
                         break;
@@ -38,7 +42,8 @@ public class Main {
                         break;
                     case "4":
                         System.out.println("You have selected Doritos Chips");
-                        break;;
+                        break;
+                    ;
                     case "0":
                         System.out.println("Cancelling Order...");
                         break;
