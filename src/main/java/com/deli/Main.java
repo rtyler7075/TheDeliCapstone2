@@ -17,7 +17,7 @@ public class Main {
                 System.out.println("\t2: Drink Flavor");
                 System.out.println("\t0: Back");
 
-                String input = scanner.nextLine();
+                input = scanner.nextLine();
 
                 switch (input.toUpperCase()){
                     case "1":

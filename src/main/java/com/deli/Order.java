@@ -1,5 +1,7 @@
 package com.deli;
 
+import java.util.ArrayList;
+
 class Order {
 
     private String customerName;
@@ -11,7 +13,7 @@ class Order {
         this.customerName = customerName;
         this.items = new ArrayList<>();
         this.totalPrice = 0;
-        this.orderNumber = orderNumber++;
+        orderNumber = orderNumber++;
     }
 
     public void addItem(Item item) {
