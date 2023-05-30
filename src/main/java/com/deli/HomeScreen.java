@@ -37,7 +37,7 @@ public class HomeScreen {
             System.out.println("\t2: Add Drinks");
             System.out.println("\t3: Add Chips");
             System.out.println("\t4: Checkout");
-            System.out.println("\t0: Cancel Order");
+            System.out.println("\t0: Back");
             System.out.println("Please enter a command: ");
 
             input = scanner.nextLine();
@@ -56,7 +56,7 @@ public class HomeScreen {
                     checkout();
                     break;
                 case "0":
-                    System.out.println("Canceling Order");
+                    System.out.println("Going back");
                     break;
                 default:
                     System.out.println("Invalid input, please try again.");
@@ -73,7 +73,7 @@ public class HomeScreen {
             System.out.println("\t2: Sandwich Size: ");
             System.out.println("\t3: Would you like your bread to be toasted?");
             System.out.println("\t4: Toppings");
-            System.out.println("\t0: Cancel Order");
+            System.out.println("\t0: Back");
 
             input = scanner.nextLine();
 
@@ -91,7 +91,7 @@ public class HomeScreen {
                     toppings();
                     break;
                 case "0":
-                    System.out.println("Canceling Order");
+                    System.out.println("Going Back");
                     break;
                 default:
                     System.out.println("Invalid input, please try again.");
@@ -101,12 +101,42 @@ public class HomeScreen {
     }
 
     private static void selectBread() {
+
+        String input;
+        do {
+            System.out.println("--Select Bread--");
+            System.out.println("\t1: White Bread");
+            System.out.println("\t2: Wheat Bread");
+            System.out.println("\t3: Sourdough Bread");
+            System.out.println("\t0: Go Back");
+
+            input = scanner.nextLine();
+
+            switch (input.toUpperCase()) {
+                case "1":
+                    System.out.println("You have selected white bread.");
+                    break;
+                case "2":
+                    System.out.println("You have selected wheat bread.");
+                    break;
+                case "3":
+                    System.out.println("You have selected sourdough bread.");
+                    break;
+                case "0":
+                    System.out.println("Going back");
+                    break;
+                default:
+                    System.out.println("Invalid input, please try again.");
+                    break;
+            }
+        } while (!input.equalsIgnoreCase("0"));
     }
     private static void sandwichSize() {
     }
     private static void toastingBread() {
     }
     private static void toppings() {
+
         String input;
         do {
             System.out.println("--Toppings--");
@@ -114,7 +144,7 @@ public class HomeScreen {
             System.out.println("\t2: Cheese: ");
             System.out.println("\t3: Other toppings");
             System.out.println("\t4: Select sauces: ");
-            System.out.println("\t0: Cancel Order");
+            System.out.println("\t0: Back");
 
             input = scanner.nextLine();
 
@@ -145,6 +175,55 @@ public class HomeScreen {
     private static void cheese() {
     }
     private static void otherToppings() {
+
+        String input;
+        do {
+            System.out.println("--Other Toppings--");
+            System.out.println("\t1: Lettuce");
+            System.out.println("\t2: Peppers");
+            System.out.println("\t3: Onions");
+            System.out.println("\t4: Tomatoes ");
+            System.out.println("\t5: Jalapenos");
+            System.out.println("\t6: Pickles");
+            System.out.println("\t7: Guacamole");
+            System.out.println("\t8: Mushrooms");
+            System.out.println("\t0: Back");
+
+            input = scanner.nextLine();
+
+            switch (input.toUpperCase()) {
+                case "1":
+                    System.out.println("You have selected Lettuce.");
+                    break;
+                case "2":
+                    System.out.println("You have selected Peppers.");
+                    break;
+                case "3":
+                    System.out.println("You have selected Onions.");
+                    break;
+                case "4":
+                    System.out.println("You have selected Tomatoes.");
+                    break;
+                case "5":
+                    System.out.println("You have selected Jalapenos.");
+                    break;
+                case "6":
+                    System.out.println("You have selected Pickles.");
+                    break;
+                case "7":
+                    System.out.println("You have selected Guacamole.");
+                    break;
+                case "8":
+                    System.out.println("You have selected Mushrooms.");
+                    break;
+                case "0":
+                    System.out.println("Back");
+                    break;
+                default:
+                    System.out.println("Invalid input, please try again.");
+                    break;
+            }
+        } while (!input.equalsIgnoreCase("0"));
     }
     private static void selectSauces() {
     }
@@ -155,6 +234,5 @@ public class HomeScreen {
     }
     private static void checkout() {
     }
-
 
 }
