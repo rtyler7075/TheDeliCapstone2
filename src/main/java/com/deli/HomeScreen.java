@@ -105,6 +105,25 @@ public class HomeScreen {
     private static void sandwichSize() {
     }
     private static void toastingBread() {
+
+        System.out.println("Would you like your bread toasted? (Y/N)");
+        System.out.println("\t1: Yes ");
+        System.out.println("\t2: No ");
+
+        String choice = scanner.nextLine();
+             // Toasting the bread
+        if (choice.equalsIgnoreCase("1") || choice.equalsIgnoreCase("Y")) {
+            System.out.println("You chose to have your bread toasted.");
+
+            // not toasting the bread
+        } else if (choice.equalsIgnoreCase("2") || choice.equalsIgnoreCase("N")) {
+            System.out.println("You chose not to have your bread toasted.");
+
+            // Invalid option
+        } else {
+            System.out.println("Invalid choice. Please select either 'Y' or 'N'.");
+
+        }
     }
     private static void toppings() {
         String input;
