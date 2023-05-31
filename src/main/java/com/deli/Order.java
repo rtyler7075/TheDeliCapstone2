@@ -1,7 +1,10 @@
 package com.deli;
 
+
 import java.util.ArrayList;
 import java.util.*;
+
+
 
 class Order {
 
@@ -30,6 +33,21 @@ class Order {
     public void removeItem(Product product) {
         this.products.remove(product);
         this.totalPrice -= product.getPrice();
+
+        this.products = new ArrayList<>();
+        this.totalPrice = 0;
+        orderNumber = orderNumber++;
+    }
+
+    public void addProduct(Product product) {
+        this.products.add(product);
+        this.totalPrice += product.getPrice();
+    }
+
+    public void removeProduct(Product product) {
+        this.products.remove(product);
+        this.totalPrice -= product.getPrice();
+
     }
 
     public double getTotalPrice() {
@@ -45,3 +63,5 @@ class Order {
                 '}';
     }
 }
+
+
