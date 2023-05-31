@@ -8,6 +8,8 @@ import java.util.Scanner;
 import java.io.IOException;
 
 public class Chips {
+
+
     private List<String> availableChips;
 
     public Chips() {
@@ -18,7 +20,7 @@ public class Chips {
         availableChips.add("Doritos");
     }
 
-    public void displayAvailableChips() {
+    public void AvailableChips() {
         System.out.println("Available Chips:");
         for (int i = 0; i < availableChips.size(); i++) {
             System.out.println((i + 1) + ". " + availableChips.get(i));
@@ -38,14 +40,14 @@ public class Chips {
         }
     }
 
-    public static void main(String[] args) {
+    public static void displayAvailableChips(){
         Chips chips = new Chips();
         chips.displayAvailableChips();
         String customerChoice = chips.getCustomerChips();
         System.out.println("You selected: " + customerChoice + " chip.");
     }
 
-    public void addItemToReceipt(String customerChips){
+    public void addChipsToReceipt(String customerChips){
         try{
             FileWriter writer = new FileWriter("20230530-121523.txt", true);
             BufferedWriter bufferedWriter = new BufferedWriter(writer);
