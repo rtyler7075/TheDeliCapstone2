@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cb81e68-5463-4ec9-b5f9-7e63f3314d22" name="Changes" comment="" />
+    <list default="true" id="1cb81e68-5463-4ec9-b5f9-7e63f3314d22" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deli/Checkout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deli/Checkout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deli/Chips.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deli/Chips.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deli/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deli/Drink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deli/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deli/HomeScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deli/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deli/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deli/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deli/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deli/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deli/Sandwich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deli/Sandwich.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deli/selectToppings.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,11 +31,6 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="ProjectId" id="2QLEXeegibL3PGuKQINrrOgnGQ0" />
   <component name="ProjectViewState">
@@ -34,6 +41,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/Student/Desktop/Capstone/TheDeliCapstone2"
   }
 }]]></component>

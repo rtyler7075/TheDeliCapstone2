@@ -134,9 +134,9 @@ public class HomeScreen {
     private static void sandwichSize() {
 
         System.out.println("Please select a sandwich size:");
-        System.out.println("1. Small");
-        System.out.println("2. Medium");
-        System.out.println("3. Large");
+        System.out.println(4);
+        System.out.println(8);
+        System.out.println(12);
 
         int sandwichSize = scanner.nextInt();
 

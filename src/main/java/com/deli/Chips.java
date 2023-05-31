@@ -1,18 +1,21 @@
 package com.deli;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.io.IOException;
 
 public class Chips {
     private List<String> availableChips;
 
     public Chips() {
         availableChips = new ArrayList<>();
-        availableChips.add("Regular");
-        availableChips.add("Barbecue");
-        availableChips.add("Sour Cream and Onion");
-        availableChips.add("Salt and Vinegar");
+        availableChips.add("Lays Original");
+        availableChips.add("Lays BBQ");
+        availableChips.add("Jalapeno Kettle");
+        availableChips.add("Doritos");
     }
 
     public void displayAvailableChips() {
@@ -40,5 +43,22 @@ public class Chips {
         chips.displayAvailableChips();
         String customerChoice = chips.getCustomerChips();
         System.out.println("You selected: " + customerChoice + " chip.");
+    }
+
+    public void addItemToReceipt(String customerChips){
+        try{
+            FileWriter writer = new FileWriter("20230530-121523.txt", true);
+            BufferedWriter bufferedWriter = new BufferedWriter(writer);
+
+            bufferedWriter.write(customerChips);
+            bufferedWriter.newLine();
+
+            bufferedWriter.close();
+            writer.close();
+
+            System.out.println("Chips added to receipt");
+        } catch (IOException e) {
+            System.out.println("Error writing to the receipt file: " + e.getMessage());
+        }
     }
 }
