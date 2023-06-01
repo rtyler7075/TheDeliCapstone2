@@ -126,7 +126,7 @@ public class HomeScreen {
                 System.out.println("You have selected sourdough bread.");
                 break;
             case "0":
-                System.out.println("Going back");
+                System.out.println("Going Back");
                 break;
             default:
                 System.out.println("Invalid input, please try again.");
@@ -210,7 +210,7 @@ public class HomeScreen {
                     selectSauces();
                     break;
                 case "0":
-                    System.out.println("Canceling Order");
+                    System.out.println("Going Back");
                     break;
                 default:
                     System.out.println("Invalid input, please try again.");
@@ -226,7 +226,7 @@ public class HomeScreen {
         System.out.println("\t3: Bacon");
         System.out.println("\t4: Chicken");
         System.out.println("\t5: Roast Beef");
-        System.out.println("\t0: Cancel Order");
+        System.out.println("\t0: Back");
 
         String input = scanner.nextLine();
 
@@ -247,7 +247,7 @@ public class HomeScreen {
                 System.out.println("You have selected roast beef.");
                 break;
             case "0":
-                System.out.println("Canceling Order");
+                System.out.println("Going Back");
                 break;
             default:
                 System.out.println("Invalid input, please try again.");
@@ -263,7 +263,7 @@ public class HomeScreen {
         System.out.println("\t3: Swiss");
         System.out.println("\t4: Mozzarella");
         System.out.println("\t5: Pepper Jack");
-        System.out.println("\t0: Cancel Order");
+        System.out.println("\t0: Back");
 
         String input = scanner.nextLine();
 
@@ -284,7 +284,7 @@ public class HomeScreen {
                 System.out.println("You have selected Pepper Jack cheese.");
                 break;
             case "0":
-                System.out.println("Canceling Order");
+                System.out.println("Going Back");
                 break;
             default:
                 System.out.println("Invalid input, please try again.");
@@ -335,7 +335,7 @@ public class HomeScreen {
                     System.out.println("You have selected Mushrooms.");
                     break;
                 case "0":
-                    System.out.println("Back");
+                    System.out.println("Going Back");
                     break;
                 default:
                     System.out.println("Invalid input, please try again.");
@@ -399,7 +399,7 @@ public class HomeScreen {
                     drinkFlavor();
                     break;
                 case "0":
-                    System.out.println("Canceling Order...");
+                    System.out.println("Going Back");
                     break;
                 default:
                     System.out.println("Invalid Input");
@@ -437,7 +437,7 @@ public class HomeScreen {
                     System.out.println("You have selected Doritos Chips");
                     break;
                 case "0":
-                    System.out.println("Cancelling Order...");
+                    System.out.println("Going Back");
                     break;
                 default:
                     System.out.println("Invalid Input");
@@ -471,7 +471,7 @@ public class HomeScreen {
                 case "3":
                     System.out.println("You have selected Large");
                 case "0":
-                    System.out.println("Canceling Order...");
+                    System.out.println("Going Back");
                     break;
                 default:
                     System.out.println("Invalid input");
@@ -511,7 +511,7 @@ public class HomeScreen {
                     System.out.println("You have selected Sweet Tea");
                     break;
                 case "0":
-                    System.out.println("Canceling Order...");
+                    System.out.println("Going Back");
                     break;
                 default:
                     System.out.println("Invalid input");
