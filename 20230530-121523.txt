@@ -1,0 +1,6 @@
+Order Details:
+Bread: 
+Size: 
+Chips: 
+Drink: 
+Total Price: $0.0
