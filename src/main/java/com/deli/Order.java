@@ -55,7 +55,15 @@ class Order {
     }
     public void checkout(){
         System.out.println(this.products);
-       //  this.products
+        //  this.products
+
+        // Print the order details
+        System.out.println("Order Number: " + this.orderNumber);
+        System.out.println("Products:");
+        for (Product product : this.products) {
+            System.out.println("  " + product.getClass() + " - $" + product.getPrice());
+        }
+        System.out.println("Total Price: $" + this.totalPrice);
 
 
 //        // Calculate total price

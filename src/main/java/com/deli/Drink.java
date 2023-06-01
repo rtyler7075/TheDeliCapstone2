@@ -30,6 +30,9 @@ public class Drink extends Product{
 //        this.drinkFlavor = drinkFlavor;
 //    }
 
+    public Drink() {
+    }
+
     public void initializeDrinkSizes() {
         drinkSize.add("Small");
         drinkSize.add("Medium");

@@ -5,6 +5,10 @@ import java.util.Scanner;
 public class HomeScreen {
     static Scanner scanner = new Scanner(System.in);
     private static Sandwich sandwich = new Sandwich();
+    private static Drink drink = new Drink();
+    private static Chips chips = new Chips();
+    private static Checkout checkout = new Checkout();
+
     private static Order order = new Order("Customer one");
 
     public static void main(String[] args) {
@@ -121,14 +125,16 @@ public class HomeScreen {
 
         switch (input.toUpperCase()) {
             case "1":
-                sandwich.setBreadType("White");
+                sandwich.setBreadType("White bread");
                 System.out.println("You have selected white bread.");
                 break;
             case "2":
+                sandwich.setBreadType("Wheat bread");
                 System.out.println("You have selected wheat bread.");
                 break;
             case "3":
-                System.out.println("You have selected sourdough bread.");
+                sandwich.setBreadType("Sourdough bread");
+                System.out.println("You have selected Sourdough bread.");
                 break;
             case "0":
                 System.out.println("Going Back");
@@ -155,9 +161,11 @@ public class HomeScreen {
                 System.out.println("You have selected a small sandwich.");
                 break;
             case 2:
+                sandwich.setSize(8);
                 System.out.println("You have selected a medium sandwich.");
                 break;
             case 3:
+                sandwich.setSize(12);
                 System.out.println("You have selected a large sandwich.");
                 break;
             default:
@@ -405,6 +413,8 @@ public class HomeScreen {
                     drinkFlavor();
                     break;
                 case "0":
+                    order.addProduct(drink);
+                    drink = new Drink();
                     System.out.println("Going Back");
                     break;
                 default:
@@ -443,6 +453,8 @@ public class HomeScreen {
                     System.out.println("You have selected Doritos Chips");
                     break;
                 case "0":
+                    order.addProduct(chips);
+                    chips = new Chips();
                     System.out.println("Going Back");
                     break;
                 default:
@@ -453,6 +465,42 @@ public class HomeScreen {
     }
 
     private static void checkout() {
+        order.checkout();
+//        double sandwichPrice;
+//        double chipsPrice;
+//        double drinkPrice;
+//        double totalPrice = sandwichPrice + chipsPrice + drinkPrice;
+//
+//        // Order Details
+//        System.out.println("Order Details:");
+//        System.out.println("Bread: " + bread);
+//        System.out.println("Size: " + breadSize);
+//        System.out.println("Chips: " + chipsType);
+//        System.out.println("Drink: " + drinkType);
+//        System.out.println("Total Price: $" + totalPrice);
+//
+//        // Confirm or Cancel order
+        System.out.println("Select an option:");
+        System.out.println("1. Confirm order and create receipt");
+        System.out.println("2. Cancel order and go back to the home screen");
+        int optionChoice = scanner.nextInt();
+//
+//        if (optionChoice == 1) {
+////            createReceipt(breadType, breadSize, chipsType, drinkType, totalPrice);
+//            System.out.println("Order confirmed receipt created!");
+//
+//
+//        } else if (optionChoice == 2) {
+//            System.out.println("Order canceled. Going back to the home screen...");
+//
+//
+//        } else {
+//            System.out.println("Invalid option selected. Going back to the home screen...");
+//
+//        }
+//
+//        // Close the scanner
+//        scanner.close();
 
     }
 
