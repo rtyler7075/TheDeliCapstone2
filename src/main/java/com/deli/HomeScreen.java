@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class HomeScreen {
     static Scanner scanner = new Scanner(System.in);
+    private static Sandwich sandwich = new Sandwich();
+    private static Order order = new Order("Customer one");
 
     public static void main(String[] args) {
 
@@ -94,6 +96,8 @@ public class HomeScreen {
                     toppings();
                     break;
                 case "0":
+                    order.addProduct(sandwich);
+                    sandwich = new Sandwich();
                     System.out.println("Going Back");
                     break;
                 default:
@@ -117,6 +121,7 @@ public class HomeScreen {
 
         switch (input.toUpperCase()) {
             case "1":
+                sandwich.setBreadType("White");
                 System.out.println("You have selected white bread.");
                 break;
             case "2":
@@ -146,6 +151,7 @@ public class HomeScreen {
 
         switch (sandwichSize) {
             case 1:
+                sandwich.setSize(4);
                 System.out.println("You have selected a small sandwich.");
                 break;
             case 2:
@@ -447,6 +453,7 @@ public class HomeScreen {
     }
 
     private static void checkout() {
+
     }
 
     private static void drinkSize() {

@@ -2,7 +2,7 @@ package com.deli;
 
 import java.util.ArrayList;
 
-public class Drink {
+public class Drink extends Product{
     private ArrayList<String> availableDrinkSize;
     private ArrayList<String> availableDrinkFlavor;
 

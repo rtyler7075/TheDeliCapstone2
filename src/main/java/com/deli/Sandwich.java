@@ -3,16 +3,11 @@ package com.deli;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Sandwich {
+public class Sandwich extends Product {
 
     private String breadType;
     private int size;
     private final List<String> toppings = new ArrayList<>();
-
-    public Sandwich(String breadType, int size) {
-        this.breadType = breadType;
-        this.size = size;
-    }
 
     public String getBreadType() {
         return breadType;
