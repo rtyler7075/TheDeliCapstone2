@@ -148,3 +148,19 @@
 //    }
 //}
 //
+
+//        double sandwichPrice;
+//        double chipsPrice;
+//        double drinkPrice;
+//        double totalPrice = sandwichPrice + chipsPrice + drinkPrice;
+//
+//        // Order Details
+//        System.out.println("Order Details:");
+//        System.out.println("Bread: " + bread);
+//        System.out.println("Size: " + breadSize);
+//        System.out.println("Chips: " + chipsType);
+//        System.out.println("Drink: " + drinkType);
+//        System.out.println("Total Price: $" + totalPrice);
+//
+//        // Confirm or Cancel order
+

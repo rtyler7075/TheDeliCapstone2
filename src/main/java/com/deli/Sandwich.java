@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Sandwich extends Product {
-
+    private String meatType;
+    private String cheeseType;
     private String breadType;
     private int size;
     private final List<String> toppings = new ArrayList<>();
@@ -34,18 +35,20 @@ public class Sandwich extends Product {
     }
 
     @Override
-    public String toString() {
-        return "Sandwich{" +
-                "breadType='" + breadType + '\'' +
-                ", size=" + size +
-                ", toppings=" + toppings +
-                '}';
+    public double getPrice() {
+        double sandwichPrice = sandwichPrice();
+
+        // Add the price for each topping
+        double toppingsPrice = toppings.size() * 0.50;
+
+        // Calculate the total price
+        double totalPrice = sandwichPrice + toppingsPrice;
+
+        return totalPrice;
     }
 
-    public double sandwichPrice() {
+    private double sandwichPrice() {
         double sandwichPrice = 0;
-
-        // Calculate the price based on the size of the sandwich.
         if (size == 4) {
             sandwichPrice = 5.50;
         } else if (size == 8) {
@@ -54,5 +57,14 @@ public class Sandwich extends Product {
             sandwichPrice = 8.50;
         }
         return sandwichPrice;
+    }
+
+    @Override
+    public String toString() {
+        return "Sandwich{" +
+                "breadType='" + breadType + '\'' +
+                ", size=" + size +
+                ", toppings=" + toppings +
+                '}';
     }
 }

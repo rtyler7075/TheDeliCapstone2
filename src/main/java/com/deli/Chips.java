@@ -2,13 +2,13 @@ package com.deli;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
-import java.io.IOException;
 
-public class Chips extends Product{
-
+public class Chips extends Product {
 
     private List<String> availableChips;
 
@@ -20,7 +20,7 @@ public class Chips extends Product{
         availableChips.add("Doritos");
     }
 
-    public void AvailableChips() {
+    public void availableChips() {
         System.out.println("Available Chips:");
         for (int i = 0; i < availableChips.size(); i++) {
             System.out.println((i + 1) + ". " + availableChips.get(i));
@@ -30,7 +30,15 @@ public class Chips extends Product{
     public String getCustomerChips() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number of your chosen chip: ");
-        int choice = scanner.nextInt();
+        int choice;
+        try {
+            choice = scanner.nextInt();
+            scanner.nextLine(); // Consume the newline character
+        } catch (InputMismatchException e) {
+            System.out.println("Invalid input. Please try again.");
+            scanner.nextLine(); // Consume the invalid input
+            return getCustomerChips();
+        }
 
         if (choice >= 1 && choice <= availableChips.size()) {
             return availableChips.get(choice - 1);
@@ -40,19 +48,26 @@ public class Chips extends Product{
         }
     }
 
-    public static void displayAvailableChips(){
+    public static void displayAvailableChips() {
         Chips chips = new Chips();
-        chips.displayAvailableChips();
+        chips.availableChips();
         String customerChoice = chips.getCustomerChips();
         System.out.println("You selected: " + customerChoice + " chip.");
     }
 
-    public void addChipsToReceipt(String customerChips){
-        try{
+    @Override
+    public double getPrice() {
+        return 1.50; // Set the price for chips
+    }
+
+    public void addChipsToReceipt(String customerChips) {
+        double chipPrice = getPrice(); // Get the price of the chips
+
+        try {
             FileWriter writer = new FileWriter("20230530-121523.txt", true);
             BufferedWriter bufferedWriter = new BufferedWriter(writer);
 
-            bufferedWriter.write(customerChips);
+            bufferedWriter.write(customerChips + " - $" + chipPrice);
             bufferedWriter.newLine();
 
             bufferedWriter.close();
@@ -63,4 +78,6 @@ public class Chips extends Product{
             System.out.println("Error writing to the receipt file: " + e.getMessage());
         }
     }
+
 }
+
