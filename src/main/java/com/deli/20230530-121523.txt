@@ -1,84 +1,11 @@
-Cheese: Cheddar
-Other Topping: Onions
+Meat: Chicken
+Cheese: Mozzarella
+Other Topping: Lettuce
 Other Topping: Tomatoes
-Sauce: Vinaigrette
-Size: Small
-Size: Medium
-Size: Medium
-Drink Size: null
-Cheese: Cheddar
-Other Topping: Onions
-Other Topping: Tomatoes
-Other Topping: Tomatoes
-Size: Small
-Size: Medium
-Drink Size: null
-Flavor: Coke
-Drink Flavor: null
-Cheese: Cheddar
-Other Topping: Onions
-Other Topping: Tomatoes
-Other Topping: Tomatoes
-Other Topping: Jalapenos
-Sauce: Vinaigrette
-Size: Medium
-Drink Size: null
-Flavor: Dr.Pepper
-Drink Flavor: null
-Size: Medium
-Size: Medium
-Drink Size: null
-Flavor: Sprite
-Drink Flavor: null
-Size: Small
-Size: Medium
-Drink Size: null
-Flavor: Dr.Pepper
-Drink Flavor: null
-Size: Small
-Drink Size: null
-Flavor: Sprite
-Drink Flavor: null
-Size: Small
-Drink Size: null
-Flavor: Sprite
-Drink Flavor: null
-Size: Small
-Drink Size: null
-Flavor: Sprite
-Drink Flavor: null
-Flavor: Sprite
-Drink Flavor: null
+Other Topping: Mushrooms
+Sauce: Mayo
+Sauce: Thousand Island
 Size: Large
-Drink Size: null
-Flavor: Sprite
-Drink Flavor: null
-Size: Small
-Flavor: Sprite
-Drink Size: null
-Size: Medium
 Flavor: Dr. Pepper
-Drink Size: Medium
-Sauce: Vinaigrette
+Drink Size: Large
 Chips: Lays BBQ
-Cheese: Swiss
-Sauce: Vinaigrette
-Size: Small
-Flavor: Sprite
-Drink Size: Small
-Chips: Lays Original
-Meat: Ham
-Other Topping: Tomatoes
-Size: Small
-Flavor: Sprite
-Drink Size: Small
-Chips: Jalapeno Kettle
-Meat: Turkey
-Cheese: Cheddar
-Other Topping: Onions
-Sauce: Ranch
-Size: Small
-Flavor: Sprite
-Drink Size: Small
-Chips: Lays BBQ
-Chips: Jalapeno Kettle
